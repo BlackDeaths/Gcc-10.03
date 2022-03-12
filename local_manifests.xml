@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+
+<!-- GitLab -->
+  <remote name="gitlabe"        
+          fetch="https://gitlab.com" />
+
+<remote  name="bitbucket"
+           fetch="https://bitbucket.org/" />
+
+
+<project name="ArrowOS-Devices/android_device_google_taimen" path="device/google/taimen" remote="github" revision="arrow-12.0"/>
+ <project name="ArrowOS-Devices/android_device_google_wahoo" path="device/google/wahoo" remote="github" revision="arrow-12.0"/>
+ 
+<project name="ArrowOS-Devices/android_vendor_google_wahoo" path="vendor/google" remote="github" revision="arrow-12.0"/>
+<project name="ArrowOS-Devices/android_kernel_google_wahoo" path="kernel/google/wahoo" remote="github" revision="arrow-12.0"/>
+
+
+ 
+</manifest>
