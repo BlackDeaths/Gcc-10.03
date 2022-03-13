@@ -1,0 +1,5 @@
+export PATH=~/bin:$PATH
+export USE_CCACHE=1
+export CCACHE_EXEC=$(which ccache)
+export SKIP_ABI_CHECKS=true
+export LC_ALL=C
