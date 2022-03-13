@@ -3,3 +3,14 @@ export USE_CCACHE=1
 export CCACHE_EXEC=$(which ccache)
 export SKIP_ABI_CHECKS=true
 export LC_ALL=C
+
+
+. build/envsetup.sh && blissify  -g taimen
+
+lunch sdk-eng
+
+make update-api
+
+make update-api && make -j4
+
+ccache -M 10G
