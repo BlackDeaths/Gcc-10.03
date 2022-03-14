@@ -23,3 +23,15 @@ sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zl
 sudo apt-get install g++ make gawk libghc-setenv-dev asciidoc-base debian-goodies needrestart flex bison ncurses-dev texinfo gcc gperf patch libtool automake g++ libncurses5-dev gawk subversion expat libexpat1-dev python-all-dev binutils-dev bc libcap-dev autoconf libgmp-dev build-essential pkg-config libmpc-dev libmpfr-dev autopoint gettext txt2man liblzma-dev libssl-dev libz-dev mercurial wget tar gcc-11 g++-11 zstd --fix-broken --fix-missing
 
 sudo apt-get install e2fsprogs reiserfsprogs  xfsprogs  jfsutils  ntfs-3g
+
+
+export OVERRIDE_TARGET_FLATTEN_APEX=true \
+
+          && . ./build/envsetup.sh \
+
+          && lunch bliss_taimen-userdebug \
+
+          && export OVERRIDE_TARGET_FLATTEN_APEX=true \
+
+          && build/soong/soong_ui.bash --dumpvar-mode
+          
