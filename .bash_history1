@@ -1,0 +1,547 @@
+dh -i
+less /etc/fstab
+df -h
+df -i
+fdisk -l
+sudo apt install fdisk
+sudo apt-get install -y fdisk
+sudo apt-get update && sudo apt-get install git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk2.8-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev openjdk-8-jre openjdk-8-jdk pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline-gplv2-dev gcc-multilib maven tmux screen w3m ncftp
+mkdir ~/bin
+PATH=~/bin:$PATH
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+sudo apt install git-all
+sudo apt-get install dh-autoreconf libcurl4-gnutls-dev libexpat1-dev   gettext libz-dev libssl-dev
+sudo apt-get install asciidoc xmlto docbook2x
+sudo apt-get install install-info
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip squashfs-tools python-mako libssl-dev ninja-build lunzip syslinux syslinux-utils gettext genisoimage gettext bc xorriso xmlstarlet
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+x ~/bin/repo
+git clone https://github.com/akhilnarang/scripts
+sudo apt-get install flex bison ncurses-dev texinfo gcc gperf patch libtool automake g++ libncurses5-dev gawk expat libexpat1-dev python-all-dev binutils-dev bc  libcap-dev autoconf autoconf-archive libgmp-dev build-essential gcc-multilib g++-multilib pkg-config libmpc-dev libmpfr-dev autopoint gettext liblzma-dev libssl-dev libz-dev
+cd scripts
+bash setup/android_build_env.sh
+sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove
+wget -q -O- http://www.webmin.com/jcameron-key.asc | sudo apt-key add
+sudo apt-get install -y gnupg1
+sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove
+sudo apt install webmin
+sudo apt-get install libauthen-pam-perl libio-pty-perl apt-show-versions python libapt-pkg-perl python2 python2-minimal python2.7 libpython2-stdlib python2.7-minimal libpython2.7-stdlib libpython2.7-minimal
+fdisk -l
+fdisk /dev/ploop18949p1
+fdisk /dev/ploop18949
+bash setup/android_build_env.sh
+sudo apt install make
+cd
+ls -la /dev/vda
+ls -la /dev/sda
+df -h
+ls -la /dev/ploop18949p1
+gdisk /dev/ploop18949p1
+gdisk /dev/ploop18949
+df -i
+gdisk /dev/ploop18949
+rm -rf /dev/ploop18949
+df -i
+df -k
+sudo mount tmpfs
+sudo mkdir /media/ramdisk
+sudo chmod 777 /media/ramdisk
+sudo mount tmpfs
+sudo mke2fs -m 0 /dev/ram0
+sudo mkdir /media/ramdisk
+sudo mount /dev/ram0 /media/ramdisk
+sudo chmod --verbose a+rwx /media/ramdisk
+df -k
+mkdir -p /mnt/ram
+mount -t ramfs -o size=20m ramfs /mnt/ram
+sudo apt install ramfs
+sudo apt-get install e2fsprogs reiserfsprogs  xfsprogs  jfsutils  ntfs-3g
+df -k
+sudo resize2fs -p /dev/ploop18949p1
+sudo resize2fs -p /dev/ploop18949
+sudo xfs_growfs /mountpoint
+sudo crontab -e
+*/2 * * * * /bin/mount -a > /dev/null 2>&1
+SUBSYSTEM=="block", RUN+="/bin/mount -a"
+sudo apt install apt-transport-https 
+sudo systemctl daemon-reload
+sudo hostnamectl set-hostname meet.scheible.it
+curl https://download.jitsi.org/jitsi-key.gpg.key | sudo sh -c 'gpg --dearmor > /usr/share/keyrings/jitsi-keyring.gpg'  
+$ echo 'deb [signed-by=/usr/share/keyrings/jitsi-keyring.gpg] https://download.jitsi.org stable/' | sudo tee /etc/apt/sources.list.d/jitsi-stable.list > /dev/null  
+echo 'deb [signed-by=/usr/share/keyrings/jitsi-keyring.gpg] https://download.jitsi.org stable/' | sudo tee /etc/apt/sources.list.d/jitsi-stable.list > /dev/null 
+sudo apt update
+sudo sudo apt -y install jitsi-meet  
+8systemctl --user show syncthing | grep LimitNOFILE
+LimitNOFILE=4096
+sudo apt -f install
+sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove
+sudo dpkg --configure -a
+sudo apt-get install -f
+sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove
+df -k
+sudo apt install build-essential autoconf automake libtool gawk alien fakeroot dkms libblkid-dev  uuid-dev libudev-dev libssl-dev zlib1g-dev libaio-dev libattr1-dev libelf-dev python3 python3-dev python3-setuptools python3-cffi libffi-dev python3-packaging git
+sudo apt install ksh bc fio acl sysstat mdadm lsscsi parted attr dbench  samba rng-tools pax linux-tools-common selinux-utils quota
+sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove
+df -i
+git config --global user.name Blackjubel
+git config --global user.email Blackjubels@gmail.com
+mkdir bliss
+cd bliss
+repo init -u https://github.com/BlissRoms/platform_manifest.git -b r
+repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimized-fetch --prune
+badblocks -nvs dev/ploop18949 
+badblocks -nvs /dev/ploop18949
+sudo dd if=/dev/zero bs=1M of=/dev/sda
+sudo apt-get install -y update-manager-core
+sudo apt-get install openjdk-8-jdk
+echo loop > /etc/modules-load.d/loop.conf
+echo options loop max_loop=8 > /etc/modprobe.d/eightloop.conf
+dd if=/dev/zero of=/root/diskimage bs=1M count=1024
+mkfs.ext4 /root/diskimage
+cat /proc/mounts | grep /dev/loop
+losetup /dev/loop0 /root/diskimage
+df -i
+sudo apt-get install ncdu
+ncdu
+sudo badblocks -v /dev/ploop18949 > badsectors.txt
+sudo badblocks -v /dev/ploop18949  
+dumpe2fs -b
+dumpe2fs -i
+df -
+cd bliss
+sudo mount tmpfs
+cd bliss
+cd kernel/google/wahoo
+git fetch git://github.com/Kaz205/android_kernel_google_wahoo.git
+git cherry-pick 3afd01a9f0c69da876838477fea3f0c7a43dd2e7
+cd kernel/google/wahoo
+repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimized-fetch --prune
+cd kernel/google/wahoo
+git fetch git://github.com/Kaz205/android_kernel_google_wahoo.git
+git cherry-pick 3afd01a9f0c69da876838477fea3f0c7a43dd2e7
+cd
+cd bliss
+. build/envsetup.sh && blissify  -d -g taimen
+cd bliss
+. build/envsetup.sh && blissify  -d -g taimen
+. build/envsetup.sh && blissify  -g taimen
+.  build/envsetup.sh && b make clean && make clobber
+.  build/envsetup.sh && make clean && make clobber
+. build/envsetup.sh && blissify  -g taimen
+apt-get install grub-pc grub-common os-prober --reinstall
+mount
+. build/envsetup.sh && blissify  -g taimen
+lunch sdk-eng
+make update-api
+make update-api && make -j4
+export SKIP_ABI_CHECKS=true
+export LC_ALL=C
+. build/envsetup.sh && blissify  -g taimen
+reboot
+grub-install /dev/ploop18949p1
+grub-install /dev/ploop18949
+apt-get install --reinstall grub-pc
+apt-get install -f
+sudo apt-get -f -s autoremove
+uname -a
+update-initramfs
+depmod
+apt search linux-image-amd64 |grep 5.4
+apt install linux-headers-5.4.0-2-amd64 linux-headers-5.4.0-2-common linux-image-5.4.0-2-amd64 
+lsb_release -a
+update-initramfs -u -k all
+dpkg -l linux-image*|grep ii
+cd bliss
+. build/envsetup.sh && blissify -g taimen
+wq
+. build/envsetup.sh && blissify -g taimen
+.  build/envsetup.sh && b make clean && make clobber
+.  build/envsetup.sh &&  make clean && make clobber
+. build/envsetup.sh && blissify -g taimen
+git clone https://github.com/tytso/e2fsprogs.git
+cd e2fsprogs
+mkdir build
+cd build
+../configure
+../configure --enable-elf-shlibs
+../configure --enable-elf-shlibs --enable-profile
+make 
+make check
+make install
+make install-libs
+../install-utils/remove_preformat_manpages
+../install-utils/convfstab
+cd
+mount -o remount,size=1G /dev/shm
+mount -o remount,size=4G,noatime /tmp
+mount -o remount,size=4G,noatime /dev/pts
+mount -o remount,size=4G,noatime /dev/shm
+sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip squashfs-tools libssl-dev ninja-build lunzip syslinux syslinux-utils gettext genisoimage gettext bc xorriso xmlstarlet
+ccache -M 50G
+sudo update-alternatives --config javac
+sudo update-alternatives --config java
+reboot
+mount -o remount,size=4G,noatime /dev/shm
+sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove
+cd bliss
+. build/envsetup.sh && blissify -g taimen
+.  build/envsetup.sh &&  make clean && make clobber
+. build/envsetup.sh && blissify -g taimen
+make -j2
+. build/envsetup.sh && blissify -g taime
+repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimized-fetch --prune
+.  build/envsetup.sh &&  make clean && make clobber 
+tmpfs   /tmp         tmpfs   rw,nodev,nosuid,size=2G          0  0
+df /tmp
+sudo mount -oremount,size=4G /tmp
+sudo mount -oremount,size=4G /shm
+journalctl -u tmp.mount
+sudo mount -oremount,size=4G /shm
+journalctl -u tmp.mount
+sudo mount -oremount,size=4G /tmp
+mount -o remount,size=4G,noatime /dev/shm
+cat / proc / partitions
+blockdev --getsize64 /dev/
+blockdev --getsize64 /dev/ploop18949
+blockdev --getsz /dev/ploop18949
+blockdev --getsize /dev/ploop18949
+blockdev --getbsz partition
+df -i
+df -g
+df -h
+cd bliss
+. build/envsetup.sh && blissify -g taime
+cd bliss
+. build/envsetup.sh && blissify -g taimen
+cd bliss
+rm -rf kernel/google/wahoo1
+.  build/envsetup.sh &&  make clean && make clobber
+rm -rf kernel/google/wahoo2
+mount -o remount,size=4G,noatime /dev/shm
+blockdev --getbsz partition
+blockdev --getsize64 /dev/ploop18949
+blockdev --getsz /dev/ploop18949
+blockdev --getsize /dev/ploop18949
+sudo mount -oremount,size=4G /shm
+sudo mount -oremount,size=4G /tmp
+blockdev --getsize64 /dev/ploop18949
+mount -o remount,size=4G,noatime /dev/shm
+sudo mount -oremount,size=4G /dev/shm
+cd bliss
+. build/envsetup.sh && blissify -g taime
+. build/envsetup.sh && blissify -g taimen
+. build/envsetup.sh && blissify-d -g taimen
+. build/envsetup.sh && blissify -d -g taime
+cd bliss
+.  build/envsetup.sh &&  make clean && make clobber
+. build/envsetup.sh && blissify -d -g taime
+echo $(( $(blockdev ...)/1024 ))
+cat /proc/partitions
+mknod -m 660 /dev/block/ubuntu b 179 26
+mount -t ext3 -o rw /dev/block/ubuntu /ubuntu
+sudo mount -oremount,size=4G /dev/shm 
+mount -o remount,size=4G,noatime /dev/shm
+blockdev --getsize64 /dev/ploop18949
+blockdev --getsize /dev/ploop18949
+blockdev --getsz /dev/ploop18949
+cd bliss
+. build/envsetup.sh && blissify -d -g taimen     
+. build/envsetup.sh && blissify -g taimen
+cd bliss
+.  build/envsetup.sh &&  make clean && make clobber
+mkdir cr
+cd cr
+repo init -u git://github.com/crdroidandroid/android.git -b 11.0
+repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimized-fetch --prune
+cd bliss
+.  build/envsetup.sh &&  make clean && make clobber
+. build/envsetup.sh && blissify -d -g taimen     
+. build/envsetup.sh && blissify -g taimen
+mount -o remount,size=4G,noatime /dev/shm
+blockdev --getsize64 /dev/ploop18949
+blockdev --getsize /dev/ploop18949
+blockdev --getsz /dev/ploop18949
+cd bliss
+. build/envsetup.sh && blissify -g taimen
+sudo mount -oremount,size=4G /dev/shm 
+cd bliss
+. build/envsetup.sh && blissify -g taimen
+.  build/envsetup.sh &&  make clean && make clobber
+. build/envsetup.sh && blissify -d -g taimen     
+mount -o remount,size=4G,noatime /dev/shm
+rm -rf scripts
+rm -rf e2fsprogs
+sudo mount -oremount,size=4G /dev/shm 
+mount -o remount,size=4G,noatime /dev/shm
+cd bliss
+repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimized-fetch --prune
+cd kernel/google/wahoo
+git fetch git://github.com/Kaz205/android_kernel_google_wahoo.git
+git cherry-pick 3afd01a9f0c69da876838477fea3f0c7a43dd2e7
+cd
+cd bliss
+sudo apt-get install openjdk-11-jre openjdk-11-jdk
+sudo apt autoremove
+sudo apt-get install openjdk-11-jre openjdk-11-jdk
+sudo update-alternatives --config javac
+. build/envsetup.sh && blissify -d -g taimen     
+rm -rf kernel
+repo sync -c --force-sync --no-tags --no-clone-bundle -j$(nproc --all) --optimized-fetch --prune
+cd kernel/google/wahoo
+git cherry-pick 3afd01a9f0c69da876838477fea3f0c7a43dd2e7
+cd
+cd kernel/google/wahoo
+cd bliss
+cd kernel/google/wahoo
+cd
+cd bliss
+sudo update-alternatives --config javac
+sudo update-alternatives --config java
+.  build/envsetup.sh &&  make clean && make clobber
+. build/envsetup.sh && blissify -d -g taimen     
+.  build/envsetup.sh &&  make clean && make clobber
+. build/envsetup.sh && blissify -d -g taimen     
+. build/envsetup.sh && blissify -g taimen
+. build/envsetup.sh && blissify -d -g taimen     
+cd bliss
+sudo mount -oremount,size=4G /dev/shm 
+. build/envsetup.sh && blissify -d -g taimen     
+cd bliss
+. build/envsetup.sh && blissify -d -g taimen     
+.  build/envsetup.sh &&  make clean && make clobber
+. build/envsetup.sh && blissify -d -g taimen     
+cd bliss
+. build/envsetup.sh && blissify -d -g taimen     
+sudo mount -oremount,size=4G /dev/shm 
+. build/envsetup.sh && blissify -g taimen
+mount -o remount,size=4G,noatime /dev/shm
+. build/envsetup.sh && blissify -g taimen
+. build/envsetup.sh && blissify -d -g taimen     
+.  build/envsetup.sh &&  make clean && make clobber
+. build/envsetup.sh && blissify -d -g taimen     
+. build/envsetup.sh && blissify -g taimen
+. build/envsetup.sh && blissify -d -g taimen     
+cd
+dpkg -l linux-image*|grep ii
+update-initramfs
+update-initramfs all
+update-initramfs -u
+apt search linux-image-amd64 |grep 5.4
+apt install linux-headers-5.4.0-2-amd64 linux-headers-5.4.0-2-common linux-image
+mount -o remount,size=4G,noatime /root/bliss/out
+mount -o remount,size=4G,noatime /root/
+sudo mount -oremount,size=6G /dev/shm 
+mount -o remount,size=6G,noatime /dev/shm
+df -h
+df -hi
+ccache -c && ccache -C
+sudo -i
+sudo fsck.xfs /dev/ploop18949
+sudo xfs_repair /dev/ploop18949
+sudo xfs_repair /dev/ploop18949p1
+sudo fsck /dev/ploop18949
+sudo umount /dev/ploop18949
+sudo umount /dev/ploop18949p1
+sudo fsck.ext4 -cDfty -C 0 /dev/ploop18949
+lsblk
+sudo lvscan
+apt install lvscan
+dd if=/dev/zero of=/dev/sda conv=sync bs=4096 count=1 seek=*NUMBER_COMPUTED_EARLIER*
+dd if=/dev/zero of=/dev/ploop18949 conv=sync bs=4096 count=1 
+sudo mount -oremount,size=4G /dev/shm 
+sudo mount
+mount  -l
+sudo blkid
+sudo losetup --all |grep loop44
+sudo pvs
+sudo apt-get install autofs
+sudo apt-get install davfs2
+systemd-system.conf
+gvfs-mount
+sudo apt-get install libblkid1
+sudo blkid
+grep -r 'SUCHBEGRIFF' /{{,local/}lib,run,etc}/udev/rules.d/
+sudo apt-get install udev
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="57:04:b6:c2:6c:z3", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="eth0"
+ls -Al /dev/disk/by-uuid
+sudo apt-get install util-linux
+sudo blkid 
+sudo mount -oremount,size=4G /dev/ploop18949p1
+sudo update-alternatives --config javac
+sudo update-alternatives --config java
+mount -o remount,size=4G,noatime /dev/ploop18949p1
+mount -o remount,size=4G,noatime /dev/tmp
+mount -o remount,size=4G,noatime /dev
+sudo mount -oremount,size=4G /dev/tmp
+sudo mount -oremount,size=4G /dev/
+sudo mount -oremount,size=4G /dev/shm 
+mount  -l
+sudo mount -oremount,size=4G /dev/user
+sudo mount -oremount,size=4G /dev/user/0
+sudo mount -oremount,size=4G /media/ramdisk
+mount -o remount,size=4G,noatime /media/ramdisk
+sudo mount -oremount,size=2G /media/ramdisk
+sudo lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL
+sudo mkfs.ext4 -F /dev/ploop18949
+sudo smartctl -a /dev/ploop18949
+apt install smartctl
+apt install smart
+sudo fdisk /dev/ploop18949
+sudo fdisk /dev/ploop18949p1
+sudo mkfs.ext2 /dev/ploop18949
+sudo mkfs.ext4 /dev/ploop18949
+mke2fs /dev/ploop18949
+mke2fs /dev/ploop18949p1
+dd if=/dev/zero of=raw bs=1024
+sudo mount -oremount,size=2G /media/ramdisk
+sudo badblocks -v -s /dev/ploop18949p1
+sudo badblocks -v -s /dev/ploop18949
+sudo -su
+sudo -s
+sudo su -
+sudo mount -oremount,size=4G /dev/shm 
+mount -o remount,size=4G,noatime /dev/shm
+blockdev --getsize64 /dev/ploop18949
+blockdev --getsize /dev/ploop18949
+mount -o remount,size=4G,noatime /dev/shm/
+sudo mount -oremount,size=4G /dev/shm 
+sudo mount -oremount,size=5G /dev/shm 
+cd bliss
+. build/envsetup.sh && blissify -g taimen
+mount -o remount,size=5G,noatime /dev/shm/
+. build/envsetup.sh && blissify -g taimen
+. build/envsetup.sh && blissify -d -g taimen     
+. build/envsetup.sh && blissify -d -g taimen    
+.  build/envsetup.sh &&  make clean && make clobber
+. build/envsetup.sh && blissify -d -g taimen    
+make -j1
+. build/envsetup.sh && blissify -d -g taimen    
+. build/envsetup.sh && blissify -g taimen
+. build/envsetup.sh && blissify -d -g taimen    4
+. build/envsetup.sh && blissify -g taimen
+. build/envsetup.sh && blissify -d -g taimen    
+.  build/envsetup.sh &&  make clean && make clobber
+sudo mount -oremount,size=4G /home
+sudo mount -oremount,size=4G /roit
+sudo mount -oremount,size=4G /root
+sudo mount -oremount,size=4G /dev/user
+sudo mount -oremount,size=4G /dev/zero
+sudo mount -oremount,size=4G /dev/shm
+. build/envsetup.sh && blissify -d -g taimen    
+cd bliss
+. build/envsetup.sh && blissify -d -g taimen    
+mount -o remount,size=5G,noatime /dev/shm/
+. build/envsetup.sh && blissify -d -g taimen     
+.  build/envsetup.sh &&  make clean && make clobber
+. build/envsetup.sh && blissify -g taimen
+dpkg -l | egrep 'linux-image|linux-headers'
+sudo dpkg-reconfigure linux-image-5.4.0.88-generic  
+ccache -F 0
+ccache -M 0
+sudo sysctl vm.swappiness=40
+sysctl vm.swappiness
+sudo sysctl vm.swappiness=40
+sudo sysctl vm.swappiness=30
+sudo apt-get install swapspace
+sudo dpkg --configure -a
+sudo apt --fix-broken install
+sudo dpkg --configure -a
+sudo apt autoremove
+sudo apt --fix-broken install
+sudo dpkg --configure -a
+sudo apt autoremove
+sudo swapoff -a
+sudo apt --fix-broken install
+sudo dpkg --configure -a
+sudo apt autoremove
+sudo systemctl --type swap
+chkconfig
+systemctl list-units --type=service
+systemctl list-units --type=service --all
+systemctl list-unit-files --state=enabled
+systemctl status cups.service
+systemctl enable org.cups.cupsd.service
+systemctl start cups
+sudo service cups restart
+sudo apt-get install --reinstall cups cups-browsed cups-client cups-common cups-daemon cups-server-common
+sudo apt autoremove swapspace
+sudo service cups restart
+systemctl start cups
+systemctl enable org.cups.cupsd.service
+systemctl status cups.service
+sudo apt-get install swapspace
+sudo sysctl vm.swappiness=30
+sysctl: setting key "vm.swappiness"
+sysctl vm.swappiness
+sudo sysctl vm.swappiness=30
+sudo service procps start
+sudo sysctl -w vm.swappiness=30
+cat /proc/sys/vm/swappiness
+sudo sysctl -w vm.swappiness=1
+sudo sysctl vm.swappiness=1
+sudo sysctl vm.vfs_cache_pressure=1
+sudo sh -c 'echo 0 > /proc/sys/vm/swappiness'
+sudo apt-get install -y mdadm
+cd cr
+cd kernel/google/wahoo
+git fetch git://github.com/Kaz205/android_kernel_google_wahoo.git
+git cherry-pick 3afd01a9f0c69da876838477fea3f0c7a43dd2e7
+cd
+sudo mount -oremount,size=5G /dev/shm 
+sudo apt-get install --reinstall linux-image-$(uname -r)
+sudo apt-get install linux-lowlatency
+sudo update-initramfs -uk 'all'
+sudo apt update 
+sudo apt upgrade
+sudo update-initramfs -uk 'all
+sudo update-initramfs -uk 'all'
+update-initramfs -u
+cd /opt/kernel
+wget kernelimage
+tar -xzf kernelimage
+make menuconfig -> exit
+make
+make modules
+make modules_install
+make install
+mkinitramfs
+mkinitramfs -c
+update-initramfs -k all -u
+mdadm --misc --detail /dev/ploop18949
+mdadm --misc --detail /dev/ploop18949p1
+sudo apt-get install firmware-linux-nonfree
+sudo mdadm --examine --scan
+update-initramfs -u
+dpkg -l | egrep 'linux-image|linux-headers'
+sudo dpkg-reconfigure linux-image-5.4.0.88.9-generic  
+sudo dpkg-reconfigure linux-image-5.4.0-generic  
+cd bliss
+. build/envsetup.sh && blissify -d -g taimen     
+.  build/envsetup.sh &&  make clean && make clobber
+. build/envsetup.sh && blissify -d -g taimen     
+cd bliss
+.  build/envsetup.sh &&  make clean && make clobber444
+. build/envsetup.sh && blissify -d -g taimen     
+mount -o remount,size=5G,noatime /dev/shm/
+. build/envsetup.sh && blissify -d -g taimen     
+update-initramfs -u
+update-initramfs -k all -u
+sudo update-initramfs -uk 'all'
+sudo do-release-upgrade
+sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove
+sudo update-initramfs -uk 'all'
+sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove
+sudo dpkg --configure -a
+sudo apt --fix-broken install
+sudo dpkg --configure -a
+sudo sysctl vm.swappiness=30
+cd bliss
+sudo dpkg --configure -a
+sudo apt --fix-broken install
+reboot
+cd cr
+sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386  lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip squashfs-tools libssl-dev ninja-build lunzip syslinux syslinux-utils gettext genisoimage gettext bc xorriso xmlstarlet
+sudo apt-get install --reinstall linux-image-$(uname -r)
+sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove
+sudo apt --fix-broken install
